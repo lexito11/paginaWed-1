@@ -1,0 +1,88 @@
+.bodyTodo{
+    margin: 0px;
+    padding: 0px;
+    background-color: #d8d8d8;
+    
+}
+.header{
+    position: absolute;
+}
+.titulo{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+.contenedores{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content:space-around;
+    height: 430px;
+    margin-top: 50px;
+    gap: 80px;
+}
+.conte1, .conte2, .conte3{
+ 
+    width: 100%;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    height: 430px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.conte2{
+    margin-top: 200px;
+    background-color: rgb(255, 255, 255);
+    
+   
+}
+.sectionConte{
+    display: flex;
+    padding: 100px;
+    margin-top: -80px;
+}
+
+
+@media (max-width: 768px) {
+    .bodyTodo{
+        background-color: rgb(56, 55, 55);
+    }
+    .contenedores{
+        flex-direction: column;
+
+    }
+    .conte1, .conte2, .conte3 {
+        padding: 50px;
+        margin-top: -50px;
+    }
+    .titulo{
+        
+    }
+    .conte1, .conte2, .conte3 img{
+        margin-top: -50px;
+    }
+    
+}
+
+@media (max-width: 480px) {
+    .bodyTodo{
+        display: flex;
+        background-color: rgb(92, 93, 93);
+    }
+    .contenedores{
+        flex-direction:column;
+        width: 100%;
+    }
+    .conte1, .conte2, .conte3 {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .titulo{
+        color: rgb(242, 163, 6);
+
+    }
+}
